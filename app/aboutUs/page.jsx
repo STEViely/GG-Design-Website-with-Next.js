@@ -12,7 +12,7 @@ export default function Page() {
         <div className="gap-4 z-10 px-8 py-4 rounded-lg flex flex-col justify-center bg-white w-[80%] absolute top-[110px] drop-shadow-md md:top-[280px]">
           <h1 className="md:text-[28px] font-bold">เกี่ยวกับเรา</h1>
           <p className="text-[12px] md:text-[24px]">
-            <b>“ GG Design ”</b> บริการออกแบบโลโก้,ออกแบบและสร้างเว็บไซต์
+            <b>“ GG Design ”</b> บริการออกแบบโลโก้, ออกแบบและสร้างเว็บไซต์
             เพื่อให้ธุรกิจกของคุณ มีความน่าเชื่อถือและเป็นมืออาชีพ
             ในราคาที่เข้าถึงง่าย ยินดีให้คำปรึกษา <b>ฟรี</b>
           </p>

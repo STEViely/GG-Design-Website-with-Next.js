@@ -55,15 +55,17 @@ export default function Page() {
 
       <div className=" flex justify-center flex-col items-center gap-4">
         <div ref={targetSectionRef1} className="px-4">
-          <h1 className="font-bold text-[32px] sm:text-[36px] lg:text-[64px] text-center">
-            รับออกแบบโลโก้ <b className="font-bold">990.- </b>
-            <br className="md:hidden lg:hidden xl:hidden 2xl:hidden" />
-            ราคาเดียว
-          </h1>
+          <Link href="/logo">
+            <h1 className="font-bold text-[32px] sm:text-[36px] lg:text-[64px] text-center cursor-pointer transition-transform duration-300 ease-in-out transform hover:scale-105">
+              รับออกแบบโลโก้ <b className="font-bold">990.- </b>
+              <br className="md:hidden lg:hidden xl:hidden 2xl:hidden" />
+              ราคาเดียว
+            </h1>
+          </Link>
         </div>
         <div className="flex flex-col justify-center items-center gap-8 ">
           <div
-            className="cursor-pointer"
+            className="cursor-pointer transition-transform duration-300 ease-in-out transform hover:scale-105"
             onClick={() => openModal(0)} // Open modal with the main picture
           >
             <Image
@@ -79,7 +81,8 @@ export default function Page() {
             {images.slice(0, 5).map((img, index) => (
               <div
                 key={index}
-                className="h-[60px] w-[60px] sm:h-[90px] sm:w-[90px] lg:h-[135.53px] lg:w-[135.53px]"
+                className="h-[60px] w-[60px] sm:h-[90px] sm:w-[90px] lg:h-[135.53px] lg:w-[135.53px] cursor-pointer transition-transform duration-300 ease-in-out transform hover:scale-105"
+                onClick={() => openModal(index)}
               >
                 <Image
                   src={img.src}
@@ -96,7 +99,7 @@ export default function Page() {
         <div>
           <Link
             href="/logo"
-            className="text-[12px] sm:text-[18px] lg:text-[24px] cursor-pointer text-[#00133b] drop-shadow-lg"
+            className="text-[12px] sm:text-[18px] lg:text-[24px] cursor-pointer text-[#00133b] drop-shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
           >
             ..ดูผลงานโลโก้เพิ่มเติม คลิก..
           </Link>

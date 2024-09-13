@@ -16,12 +16,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="th">
       <body className={ibmThai.className}>
-        <div className=" flex flex-col ">
+        <div className="min-h-screen flex flex-col">
           <Header />
 
-          <main>{children}</main>
+          <main className="flex-grow">{children}</main>
 
-          <Footer className="w-full z-10 " />
+          <Footer className="w-full z-10" />
         </div>
       </body>
     </html>
