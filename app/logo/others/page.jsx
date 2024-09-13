@@ -68,7 +68,13 @@ export default function Page() {
               className="cursor-pointer w-[150px] md:w-[200px] lg:w-[300px] transition-transform duration-300 ease-in-out transform hover:scale-105"
               onClick={() => openModal(index)}
             >
-              <img src={img.src} alt={img.alt} />
+              <Image
+                src={img.src}
+                alt={img.alt}
+                width={20}
+                height={20}
+                className="w-[150px] md:w-[200px] lg:w-[300px] transition-transform duration-300 ease-in-out transform hover:scale-105"
+              />
             </div>
           ))}
         </div>

@@ -63,7 +63,7 @@ export default function Page() {
         </div>
       </div>
       <p className="mt-10 md:mt-20 text-[16px] md:text-[18px]">
-        "หวังเป็นอย่างยิ่งที่จะได้ร่วมงานกับคุณ"
+        &quot;หวังเป็นอย่างยิ่งที่จะได้ร่วมงานกับคุณ&quot;
       </p>
     </div>
   );
