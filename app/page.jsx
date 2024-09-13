@@ -155,14 +155,14 @@ export default function Page() {
         <div className="fixed inset-0 bg-black bg-opacity-85 flex justify-center pt-40 sm:z-50 sm:px-4 lg:pt-20">
           <div className="relative max-w-screen-lg mx-auto">
             <button
-              className="absolute right-[90px] top-[-50px] text-white font-bold text-[24px] sm:text-[32px] lg:text-[40px]  lg:right-1/2  sm:top-[-40px] lg:top-[-60px]"
+              className="absolute right-1/2 top-[-50px] text-white font-bold text-[24px] sm:text-[32px] lg:text-[40px]  lg:right-1/2  sm:top-[-40px] lg:top-[-60px]"
               onClick={closeModal}
             >
               ×
             </button>
             <div className="flex flex-col items-center">
               <button
-                className="absolute left-[-40px] top-[90px] text-white font-bold text-[24px] sm:text-[32px] lg:text-[50px] lg:top-1/3"
+                className="absolute left-[-30px] top-1/4 text-white font-bold text-[24px] sm:text-[32px] lg:text-[50px] lg:top-1/3"
                 onClick={prevImage}
               >
                 &lt;
@@ -172,20 +172,20 @@ export default function Page() {
                 alt={images[currentImageIndex].alt}
                 width={320}
                 height={320}
-                className="w-[200px] h-[200px] sm:w-[320px] sm:h-[320px] lg:w-[570px] lg:h-[570px] object-cover"
+                className="w-[300px]  sm:w-[520px]  lg:w-[570px]  object-cover"
               />
               <button
-                className="absolute right-[-40px] top-[90px] text-white font-bold text-[24px] sm:text-[32px] lg:text-[50px] lg:top-1/3"
+                className="absolute right-[-30px] top-1/4 text-white font-bold text-[24px] sm:text-[32px] lg:text-[50px] lg:top-1/3"
                 onClick={nextImage}
               >
                 &gt;
               </button>
             </div>
-            <div className="grid grid-cols-4 lg:grid-cols-8 gap-4 mt-4">
+            <div className="grid grid-cols-4 lg:grid-cols-8 gap-4 mt-4 ">
               {images.slice(1).map((img, index) => (
                 <button
                   key={index}
-                  className={`w-[40px] h-[40px] sm:w-[60px] sm:h-[60px] lg:w-[100px] lg:h-[100px] ${
+                  className={`w-[50px]  sm:w-[70px]  lg:w-[100px] mx-auto ${
                     currentImageIndex === index + 1
                       ? "border-2 border-white"
                       : ""

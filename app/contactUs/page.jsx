@@ -35,7 +35,7 @@ export default function Page() {
             alt="facebook"
             width={90}
             height={90}
-            className="w-[300px] md:w-[600px] cursor-pointer"
+            className="w-[300px] md:w-[600px] xl:w-[1000px] cursor-pointer"
           />
         </Link>
       </div>
