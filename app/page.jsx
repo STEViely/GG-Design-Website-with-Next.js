@@ -6,6 +6,7 @@ import QandA from "./_components/QandA";
 import Link from "next/link";
 import Hero from "./_components/hero";
 import ContactSection from "./_components/contactSection";
+import WebPreview from "./_components/webPreview";
 
 const images = [
   { src: "/111.png", alt: "Main Picture" },
@@ -139,36 +140,7 @@ export default function Page() {
             สร้างเว็บไซต์ และระบบต่างๆตามใจคุณ
           </h1>
         </div>
-        <div className="flex flex-col justify-center items-center gap-8 pb-[40px] lg:pb-[80px]">
-          <div
-            className="cursor-pointer"
-            onClick={() => openModal(0)} // Open modal with the main picture
-          >
-            <Image
-              src={images[0].src}
-              alt={images[0].alt}
-              width={320}
-              height={320}
-              className="w-[200px] h-[200px] sm:w-[320px] sm:h-[320px] lg:w-[570px] lg:h-[570px] object-cover"
-            />
-          </div>
-          <div className="flex gap-3 lg:gap-6">
-            {images.slice(0, 5).map((img, index) => (
-              <div
-                key={index}
-                className="h-[60px] w-[60px] sm:h-[90px] sm:w-[90px] lg:h-[135.53px] lg:w-[135.53px]"
-              >
-                <Image
-                  src={img.src}
-                  alt={img.alt}
-                  width={135.53}
-                  height={135.53}
-                  className="object-cover w-full h-full"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
+        <WebPreview />
       </div>
 
       {/* Modal */}
