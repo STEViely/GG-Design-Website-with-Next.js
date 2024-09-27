@@ -32,7 +32,7 @@ export default function Footer() {
                 alt="line"
                 width={19}
                 height={18}
-                className="w-[52px]"
+                className="w-[22px]"
               />
             </button>
           </a>
@@ -47,7 +47,7 @@ export default function Footer() {
                 alt="chat"
                 width={18}
                 height={18}
-                className="w-[50px] "
+                className="w-[20px] "
               />
             </button>
           </a>

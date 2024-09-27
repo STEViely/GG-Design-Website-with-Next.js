@@ -7,6 +7,7 @@ import Link from "next/link";
 import Hero from "./_components/hero";
 import ContactSection from "./_components/contactSection";
 import WebPreview from "./_components/webPreview";
+import FloatingContact from "./_components/FloatingContact";
 
 const images = [
   { src: "/111.png", alt: "Main Picture" },
@@ -142,7 +143,7 @@ export default function Page() {
             <br />
             และระบบต่างๆตามใจคุณ
             <br />
-            เริ่มต้นที่ 5,000 บาท
+            เริ่มต้นที่ 3,990 บาท
           </h1>
         </div>
         <WebPreview />
@@ -208,6 +209,7 @@ export default function Page() {
           </div>
         </div>
       )}
+      <FloatingContact />
 
       <div className="lg:flex flex-col justify-center items-center mt-16 mb-10 px-4 lg:px-0 ">
         <QandA
