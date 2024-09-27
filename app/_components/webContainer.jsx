@@ -7,9 +7,9 @@ export default function WebContainer({ title, content, img, reverse }) {
         reverse ? "flex-row-reverse" : ""
       }`}
     >
-      <div className="w-[200px] flex justify-center flex-col ">
-        <h1 className="font-bold ">{title}</h1>
-        <p>{content}</p>
+      <div className="w-[200px] md:w-[400px] flex justify-center flex-col ">
+        <h1 className="font-bold md:text-[30px] ">{title}</h1>
+        <p className="xl:text-[20px]">{content}</p>
       </div>
       <div>
         <Image
@@ -17,7 +17,7 @@ export default function WebContainer({ title, content, img, reverse }) {
           alt="webPreview"
           width={50}
           height={50}
-          className="w-[200px] drop-shadow-lg"
+          className="w-[200px] md:w-[400px] drop-shadow-lg"
         />
       </div>
     </div>

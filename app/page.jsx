@@ -78,7 +78,7 @@ export default function Page() {
       <div className=" flex justify-center flex-col items-center gap-4">
         <div ref={targetSectionRef1} className="px-4">
           <Link href="/logo">
-            <h1 className="font-bold text-[32px] sm:text-[36px] lg:text-[64px] text-center cursor-pointer transition-transform duration-300 ease-in-out transform hover:scale-105">
+            <h1 className="font-bold text-[32px] sm:text-[36px] md:text-[42px] lg:text-[64px] text-center cursor-pointer transition-transform duration-300 ease-in-out transform hover:scale-105">
               รับออกแบบโลโก้ <b className="font-bold">990.- </b>
               <br className="md:hidden lg:hidden xl:hidden 2xl:hidden" />
               ราคาเดียว
@@ -128,16 +128,21 @@ export default function Page() {
         </div>
 
         <div ref={targetSectionRef2} className="text-center px-4 mt-16 mb-4">
-          <h1 className="text-[18px] sm:text-[28px] lg:text-[50px] text-black">
-            มีโลโก้เป็นของตัวเองเเล้ว <br />
+          <h1 className="text-[18px] sm:text-[28px] md:text-[32px] lg:text-[50px] text-black">
+            มีโลโก้เป็นของตัวเองเเล้ว
+            <br />
             มีเว็บไซต์เป็นของตัวเอง หรือยัง?
           </h1>
         </div>
 
         <div className="text-center px-4">
-          <h1 className="font-bold text-[32px] sm:text-[38px] lg:text-[64px] text-black ">
+          <h1 className="font-bold text-[32px] sm:text-[38px] md:text-[42px] lg:text-[64px] text-black ">
             รับออกแบบ <br className="sm:hidden" />
-            สร้างเว็บไซต์ และระบบต่างๆตามใจคุณ
+            สร้างเว็บไซต์
+            <br />
+            และระบบต่างๆตามใจคุณ
+            <br />
+            เริ่มต้นที่ 5,000 บาท
           </h1>
         </div>
         <WebPreview />
@@ -211,9 +216,9 @@ export default function Page() {
           ans2={"2. เเจ้งความต้องการของลูกค้า"}
           ans3={"2. ตกลงราคา"}
           ans4={
-            "3. ชำระเงินก่อนเริ่มงาน โดยชำระ 100% สำหรับงานออกแบบโลโก้ เเละ 50% สำหรับงานจัดทำเว็บไซต์ โดยชำระที่เหลือเมื่อส่งมอบงานลูกค้าเสร็จสิ้น"
+            "3. ชำระเงินก่อนเริ่มงาน โดยชำระ 100% สำหรับงานออกแบบโลโก้ เเละ 50% สำหรับงานจัดทำเว็บไซต์ และชำระที่เหลือเมื่อส่งมอบงานลูกค้าเสร็จสิ้น"
           }
-          ans5={"4. ส่งงานลูกค้าให้ตรวจสอบ และแก้ไขตามความต้องการของลูกค้า"}
+          ans5={"4. ส่งงานให้ลูกค้าตรวจสอบ และแก้ไขตามความต้องการของลูกค้า"}
         />
 
         <QandA
