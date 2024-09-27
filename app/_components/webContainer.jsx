@@ -1,14 +1,14 @@
 import Image from "next/image";
 
-export default function WebContainer({ text, content, img, reverse }) {
+export default function WebContainer({ title, content, img, reverse }) {
   return (
     <div
-      className={`p-4 flex justify-center gap-8 ${
+      className={`p-8 flex justify-center gap-8 ${
         reverse ? "flex-row-reverse" : ""
       }`}
     >
       <div className="w-[200px] flex justify-center flex-col ">
-        <h1 className="font-bold">{text}</h1>
+        <h1 className="font-bold ">{title}</h1>
         <p>{content}</p>
       </div>
       <div>
@@ -17,7 +17,7 @@ export default function WebContainer({ text, content, img, reverse }) {
           alt="webPreview"
           width={50}
           height={50}
-          className="w-[200px]"
+          className="w-[200px] drop-shadow-lg"
         />
       </div>
     </div>
