@@ -8,6 +8,7 @@ import Hero from "./_components/hero";
 import ContactSection from "./_components/contactSection";
 import WebPreview from "./_components/webPreview";
 import FloatingContact from "./_components/FloatingContact";
+import facebookLogo from "@/public/facebookLogo.jpg";
 
 const images = [
   { src: "/111.png", alt: "Main Picture" },
@@ -74,9 +75,9 @@ export default function Page() {
         targetSectionRef2={targetSectionRef2}
       />
 
-      <ContactSection />
+      {/* <ContactSection /> */}
 
-      <div className=" flex justify-center flex-col items-center gap-4">
+      <div className=" flex justify-center flex-col items-center gap-4 mt-8">
         <div ref={targetSectionRef1} className="px-4">
           <Link href="/logo">
             <h1 className="font-bold text-[32px] sm:text-[36px] md:text-[42px] lg:text-[64px] text-center cursor-pointer transition-transform duration-300 ease-in-out transform hover:scale-105">
@@ -128,6 +129,26 @@ export default function Page() {
           </Link>
         </div>
 
+        <p className="text-[12px]">หรือ</p>
+        <a
+          href="https://www.facebook.com/ggdesignlogo"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="flex flex-col justify-center items-center gap-2 transition-transform duration-300 ease-in-out transform hover:scale-125">
+            <Image
+              src={facebookLogo}
+              alt="facebookLogo"
+              width={22}
+              height={22}
+              className="md:w-[50px]"
+            />
+            <p className="text-[12px] sm:text-[18px] text-[#1877F2]">
+              รับออกแบบโลโก้ By GG Design
+            </p>
+          </div>
+        </a>
+
         <div ref={targetSectionRef2} className="text-center px-4 mt-16 mb-4">
           <h1 className="text-[18px] sm:text-[28px] md:text-[32px] lg:text-[50px] text-black">
             มีโลโก้เป็นของตัวเองเเล้ว
@@ -141,7 +162,7 @@ export default function Page() {
             รับออกแบบ <br className="sm:hidden" />
             สร้างเว็บไซต์
             <br />
-            และระบบต่างๆตามใจคุณ
+            และระบบต่างๆ ตามใจคุณ
             <br />
             เริ่มต้นที่ 3,990 บาท
           </h1>
