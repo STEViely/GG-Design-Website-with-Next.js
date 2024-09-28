@@ -98,13 +98,13 @@ export default function Header({ bg }) {
           >
             <Link href="/logo">ออกแบบโลโก้</Link>
           </li>
-          <li
+          {/* <li
             className={`hover:underline ${
               isActive("/website") ? "underline" : ""
             }`}
           >
             <Link href="/website">จัดทำเว็บไซต์</Link>
-          </li>
+          </li> */}
           <li
             className={`hover:underline ${
               isActive("/aboutUs") ? "underline" : ""
@@ -145,14 +145,14 @@ export default function Header({ bg }) {
               >
                 <li>ออกแบบโลโก้</li>
               </Link>
-              <Link
+              {/* <Link
                 href="/website"
                 className={`hover:underline ${
                   isActive("/website") ? "underline" : ""
                 }`}
               >
                 <li>จัดทำเว็บไซต์</li>
-              </Link>
+              </Link> */}
               <Link
                 href="/aboutUs"
                 className={`hover:underline ${

@@ -1,12 +1,12 @@
 import WebContainer from "./webContainer";
 import Web1 from "@/public/webPreview/web1.jpg";
 import Web2 from "@/public/webPreview/web2.jpg";
-import Web3 from "@/public/webPreview/web3.jpg";
 import Web4 from "@/public/webPreview/web4.jpg";
 import ChatRealtime from "@/public/webPreview/RealtimeChat.jpg";
 import Responsive from "@/public/webPreview/resposive.jpg";
 import WebApplication from "@/public/webPreview/WebApplication.jpg";
 import Port from "@/public/webPreview/port.jpg";
+import SocialNetwork from "@/public/webPreview/SocialNetwork.jpg";
 export default function WebPreview() {
   const info = [
     {
@@ -49,7 +49,7 @@ export default function WebPreview() {
       title: "Social Network",
       content:
         "เป็นเว็บไซต์ที่ให้ผู้ใช้สามารถสร้างเนื้อหาและโต้ตอบกันได้ เช่น Facebook, Instagram",
-      img: Web3,
+      img: SocialNetwork,
     },
 
     {
