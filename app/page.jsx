@@ -9,7 +9,6 @@ import Head from "next/head";
 import WebPreview from "./_components/webPreview";
 import FloatingContact from "./_components/FloatingContact";
 import facebookLogo from "@/public/facebookLogo.jpg";
-import Cover from "@/public/cover.jpg";
 
 const images = [
   { src: "/111.png", alt: "Main Picture" },
@@ -72,7 +71,10 @@ export default function Page() {
   return (
     <div className="flex flex-col bg-white">
       <Head>
-        <meta property="og:image" content={Cover} />
+        <meta
+          property="og:image"
+          content="https://ggdesign-graphic.com/cover.jpg"
+        />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
       </Head>

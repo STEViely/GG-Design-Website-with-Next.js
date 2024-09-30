@@ -2,7 +2,6 @@ import "@/app/globals.css";
 import Header from "./_components/header";
 import { ibmThai } from "./_ui/font";
 import Footer from "./_components/footer";
-import Cover from "@/public/cover.jpg";
 
 export const metadata = {
   title: {
