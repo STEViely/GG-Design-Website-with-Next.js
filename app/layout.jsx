@@ -2,6 +2,7 @@ import "@/app/globals.css";
 import Header from "./_components/header";
 import { ibmThai } from "./_ui/font";
 import Footer from "./_components/footer";
+import Cover from "@/public/cover.jpg";
 
 export const metadata = {
   title: {
@@ -10,20 +11,19 @@ export const metadata = {
   },
   description:
     "รับออกเเบบโลโก้, รับออกเเบบเว็บไซต์, รับสร้างเว็บไซต์, logo design, website design, web building, รับทำเว็บไซต์, ทำโลโก้, ทำLogo, รับทำเว็บไซต์, รับเขียนwebsite, ออกแบบ, gg design, GG Design, ราคาประหยัด",
-  // เพิ่ม Meta Tags ของ Open Graph
   openGraph: {
     type: "website",
     locale: "th_TH",
-    url: "https://ggdesign-graphic.com/", // URL ของเว็บไซต์
+    url: "https://ggdesign-graphic.com/",
     title: "GG Design",
     description:
       "รับออกเเบบโลโก้, รับออกเเบบเว็บไซต์, รับสร้างเว็บไซต์, logo design, website design, web building",
     images: [
       {
-        url: "https://asset.cloudinary.com/dbmscl9hm/0341952200c3c7d92a1fd696e5e1e847", // URL ของรูปภาพที่ต้องการแสดง
+        url: "https://ggdesign-graphic.com/cover.jpg", // URL ของรูปภาพที่ใส่ใน public folder
         width: 1200,
         height: 630,
-        alt: "GG Design - รับออกแบบเว็บไซต์และโลโก้", // ข้อความแทนรูปภาพ
+        alt: "GG Design - รับออกแบบเว็บไซต์และโลโก้",
       },
     ],
   },
