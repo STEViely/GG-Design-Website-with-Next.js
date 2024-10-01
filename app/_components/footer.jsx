@@ -1,5 +1,16 @@
+"use client";
+
+import { usePathname } from "next/navigation";
 import Image from "next/image";
+
 export default function Footer() {
+  const pathname = usePathname();
+
+  // ถ้า pathname คือ /home ไม่ให้แสดง Footer
+  if (pathname === "/home") {
+    return null;
+  }
+
   return (
     <div className="hidden lg:h-[100px] lg:flex justify-around items-start gap-10 mx-auto my-16 relative bottom-0 left-0 w-full">
       <Image src="/GGD2.png" alt="footerLogo" width={102.54} height={102.54} />

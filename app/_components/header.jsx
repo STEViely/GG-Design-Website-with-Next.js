@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react"; // Import useState และ useEffect
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import GGDE from "@/public/GGDE.png";
@@ -8,29 +8,27 @@ import { usePathname } from "next/navigation";
 
 export default function Header({ bg }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const pathname = usePathname();
+  const pathname = usePathname(); // Reactive pathname from Next.js
 
-  const [activePath, setActivePath] = useState(pathname);
-
-  useEffect(() => {
-    setActivePath(pathname);
-  }, [pathname]);
+  // Hide header on the /home route
+  if (pathname === "/home") {
+    return null;
+  }
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
 
     if (!isMenuOpen) {
-      // ป้องกันการ scroll เมื่อเมนูเปิด
+      // Prevent scrolling when the menu is open
       document.body.style.overflow = "hidden";
     } else {
-      // เปิดการ scroll เมื่อเมนูปิด
+      // Allow scrolling when the menu is closed
       document.body.style.overflow = "auto";
     }
   };
 
-  const isActive = (path) => {
-    return pathname === path || pathname.startsWith(`${path}/`);
-  };
+  const isActive = (path) =>
+    pathname === path || pathname.startsWith(`${path}/`);
 
   return (
     <header>
@@ -88,24 +86,22 @@ export default function Header({ bg }) {
         <ul
           className={`hidden lg:flex flex-col lg:flex-row lg:items-center gap-4 sm:gap-8 text-white text-[16px] sm:text-[20px] md:text-[24px] z-10`}
         >
-          <li className={`hover:underline ${isActive("/") ? "underline" : ""}`}>
+          <li
+            key="home"
+            className={`hover:underline ${isActive("/") ? "underline" : ""}`}
+          >
             <Link href="/">หน้าหลัก</Link>
           </li>
           <li
+            key="logo"
             className={`hover:underline ${
               isActive("/logo") ? "underline" : ""
             }`}
           >
             <Link href="/logo">ออกแบบโลโก้</Link>
           </li>
-          {/* <li
-            className={`hover:underline ${
-              isActive("/website") ? "underline" : ""
-            }`}
-          >
-            <Link href="/website">จัดทำเว็บไซต์</Link>
-          </li> */}
           <li
+            key="aboutUs"
             className={`hover:underline ${
               isActive("/aboutUs") ? "underline" : ""
             }`}
@@ -113,6 +109,7 @@ export default function Header({ bg }) {
             <Link href="/aboutUs">เกี่ยวกับเรา</Link>
           </li>
           <li
+            key="contactUs"
             className={`hover:underline ${
               isActive("/contactUs") ? "underline" : ""
             }`}
@@ -127,48 +124,39 @@ export default function Header({ bg }) {
         <>
           <div className="fixed right-0 top-14 bg-white opacity-50 w-[100%] h-full flex flex-col justify-start items-end px-4 py-6 z-50"></div>
           <div className="absolute right-0 top-14 bg-[#00133B] w-[40%] flex flex-col justify-start items-end px-4 py-6 z-50">
-            {/* Menu Links */}
             <ul className="flex flex-col items-end gap-4 text-white text-[16px] sm:text-[20px]">
-              <Link
-                href="/"
+              <li
+                key="home-mobile"
                 className={`hover:underline ${
                   isActive("/") ? "underline" : ""
                 }`}
               >
-                <li>หน้าหลัก</li>
-              </Link>
-              <Link
-                href="/logo"
+                <Link href="/">หน้าหลัก</Link>
+              </li>
+              <li
+                key="logo-mobile"
                 className={`hover:underline ${
                   isActive("/logo") ? "underline" : ""
                 }`}
               >
-                <li>ออกแบบโลโก้</li>
-              </Link>
-              {/* <Link
-                href="/website"
-                className={`hover:underline ${
-                  isActive("/website") ? "underline" : ""
-                }`}
-              >
-                <li>จัดทำเว็บไซต์</li>
-              </Link> */}
-              <Link
-                href="/aboutUs"
+                <Link href="/logo">ออกแบบโลโก้</Link>
+              </li>
+              <li
+                key="aboutUs-mobile"
                 className={`hover:underline ${
                   isActive("/aboutUs") ? "underline" : ""
                 }`}
               >
-                <li>เกี่ยวกับเรา</li>
-              </Link>
-              <Link
-                href="/contactUs"
+                <Link href="/aboutUs">เกี่ยวกับเรา</Link>
+              </li>
+              <li
+                key="contactUs-mobile"
                 className={`hover:underline ${
                   isActive("/contactUs") ? "underline" : ""
                 }`}
               >
-                <li>ติดต่อเรา</li>
-              </Link>
+                <Link href="/contactUs">ติดต่อเรา</Link>
+              </li>
             </ul>
           </div>
         </>
