@@ -7,7 +7,7 @@
 }
 .embla__viewport {
   overflow: hidden;
-
+  /* background: #000; */
   display: flex;
   align-items: center;
 }
