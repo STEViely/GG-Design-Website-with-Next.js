@@ -109,11 +109,11 @@ export default function Page() {
               priority
             />
           </div>
-          <div className="flex gap-3 lg:gap-6 drop-shadow-lg">
+          <div className="flex gap-1 lg:gap-6 drop-shadow-lg">
             {images.slice(0, 5).map((img, index) => (
               <div
                 key={index}
-                className="h-[60px] w-[60px] sm:h-[90px] sm:w-[90px] lg:h-[135.53px] lg:w-[135.53px] cursor-pointer transition-transform duration-300 ease-in-out transform hover:scale-105"
+                className="h-[40px] w-[40px] sm:h-[90px] sm:w-[90px] lg:h-[135.53px] lg:w-[135.53px] cursor-pointer transition-transform duration-300 ease-in-out transform hover:scale-105"
                 onClick={() => openModal(index)}
               >
                 <Image
