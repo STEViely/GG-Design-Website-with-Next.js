@@ -8,8 +8,8 @@ export default function WebContainer({ title, content, img, reverse }) {
       }`}
     >
       <div className="w-[200px] md:w-[250px] lg:w-[340px] xl:w-[400px] 2xl:w-[500px] flex justify-center flex-col ">
-        <h1 className="font-bold md:text-[30px] ">{title}</h1>
-        <p className="xl:text-[20px]">{content}</p>
+        <h1 className="font-bold md:text-[30px] text-[#00133B]">{title}</h1>
+        <p className="xl:text-[20px] text-[#00133B]">{content}</p>
       </div>
       <div>
         <Image

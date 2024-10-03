@@ -88,32 +88,24 @@ export default function Page() {
       <div className=" flex justify-center flex-col items-center gap-4 mt-8">
         <div ref={targetSectionRef1} className="px-4">
           <Link href="/logo">
-            <h1 className="font-bold text-[32px] sm:text-[36px] md:text-[42px] lg:text-[64px] text-center cursor-pointer transition-transform duration-300 ease-in-out transform hover:scale-105">
-              รับออกแบบโลโก้ <b className="font-bold">990.- </b>
+            <h1 className="font-bold text-[32px] sm:text-[36px] md:text-[42px] lg:text-[64px] text-center cursor-pointer transition-transform duration-300 ease-in-out transform hover:scale-105 text-[#00133B]">
+              รับออกแบบโลโก้{" "}
               <br className="md:hidden lg:hidden xl:hidden 2xl:hidden" />
-              ราคาเดียว
+              <b className="font-bold text-[40px]">990 -. </b>
+              <br className="md:hidden lg:hidden xl:hidden 2xl:hidden" />
+              ราคาเดียว <br />
+              <i className="text-[18px] sm:text-[36px] md:text-[42px] lg:text-[64px]">
+                การันตีผลงานมาแล้วกว่า 3,000 แบรนด์
+              </i>
             </h1>
           </Link>
         </div>
         <div className="flex flex-col justify-center items-center gap-8 ">
-          <div
-            className="cursor-pointer transition-transform duration-300 ease-in-out transform hover:scale-105"
-            onClick={() => openModal(0)} // Open modal with the main picture
-          >
-            <Image
-              src={images[0].src}
-              alt={images[0].alt}
-              width={320}
-              height={320}
-              className="w-[200px] h-[200px] sm:w-[320px] sm:h-[320px] lg:w-[570px] lg:h-[570px] object-cover drop-shadow-lg"
-              priority
-            />
-          </div>
-          <div className="flex gap-1 lg:gap-6 drop-shadow-lg">
-            {images.slice(0, 5).map((img, index) => (
+          <div className="grid grid-cols-3 gap-1 lg:gap-6 drop-shadow-lg">
+            {images.slice(0, 9).map((img, index) => (
               <div
                 key={index}
-                className="h-[40px] w-[40px] sm:h-[90px] sm:w-[90px] lg:h-[135.53px] lg:w-[135.53px] cursor-pointer transition-transform duration-300 ease-in-out transform hover:scale-105"
+                className="h-[80px] w-[80px] sm:h-[90px] sm:w-[90px] lg:h-[350px] lg:w-[350px] cursor-pointer transition-transform duration-300 ease-in-out transform hover:scale-105"
                 onClick={() => openModal(index)}
               >
                 <Image
@@ -158,7 +150,7 @@ export default function Page() {
         </a>
 
         <div ref={targetSectionRef2} className="text-center px-4 mt-16 mb-4">
-          <h1 className="text-[18px] sm:text-[28px] md:text-[32px] lg:text-[50px] text-black">
+          <h1 className="text-[18px] sm:text-[28px] md:text-[32px] lg:text-[50px]  text-[#00133B]">
             มีโลโก้เป็นของตัวเองเเล้ว
             <br />
             มีเว็บไซต์เป็นของตัวเอง หรือยัง?
@@ -166,7 +158,7 @@ export default function Page() {
         </div>
 
         <div className="text-center px-4">
-          <h1 className="font-bold text-[32px] sm:text-[38px] md:text-[42px] lg:text-[64px] text-black ">
+          <h1 className="font-bold text-[32px] sm:text-[38px] md:text-[42px] lg:text-[64px] text-[#00133B]">
             รับออกแบบ <br className="sm:hidden" />
             สร้างเว็บไซต์
             <br />
