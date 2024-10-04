@@ -9,6 +9,7 @@ import Head from "next/head";
 import WebPreview from "./_components/webPreview";
 import FloatingContact from "./_components/FloatingContact";
 import facebookLogo from "@/public/facebookLogo.jpg";
+import Feedback from "./_components/feedback";
 
 const images = [
   { src: "/111.png", alt: "Main Picture" },
@@ -231,8 +232,9 @@ export default function Page() {
         </div>
       )}
       <FloatingContact />
+      <Feedback />
 
-      <div className="lg:flex flex-col justify-center items-center mt-16 mb-10 px-4 lg:px-0 ">
+      <div className="lg:flex flex-col justify-center items-center  mb-10 lg:px-0 ">
         <QandA
           question={"หากต้องการว่าจ้างจะต้องทำอย่างไร?"}
           ans1={"1. ติดต่อทีมงานผ่านทางช่องทางต่างๆ เช่น ไลน์ หรือเฟสบุ๊ค "}
