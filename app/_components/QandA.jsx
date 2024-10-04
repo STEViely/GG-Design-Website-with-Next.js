@@ -13,7 +13,7 @@ export default function QandA({ question, ans1, ans2, ans3, ans4, ans5 }) {
         className="flex justify-between items-center border p-4 rounded-lg bg-[#CCD0D8] cursor-pointer"
         onClick={toggleAnswer}
       >
-        <h1>{question}</h1>
+        <h1 className="text-[15px]">{question}</h1>
         <button>
           {isOpen ? (
             <span>▲</span> // ปุ่มชี้ขึ้น

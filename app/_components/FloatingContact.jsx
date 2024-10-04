@@ -27,9 +27,9 @@ export default function FloatingContact() {
           <Image
             src="/Chat.png"
             alt="chat"
-            width={50}
-            height={50}
-            className="w-[42px] transition-transform duration-300 ease-in-out transform hover:scale-125 md:w-[62px]"
+            width={49}
+            height={49}
+            className="w-[40px] transition-transform duration-300 ease-in-out transform hover:scale-125 md:w-[60px]"
           />
         </button>
       </a>

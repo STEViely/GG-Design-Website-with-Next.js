@@ -121,10 +121,10 @@ export default function Page() {
           </div>
         </div>
 
-        <div className="bg-[#15CC05] py-2 px-4 rounded-[50px] text-white transition-transform duration-300 ease-in-out transform hover:scale-105">
+        <div className="bg-[#00133B] w-[60%] flex justify-center py-2 px-4 rounded-[50px] text-white transition-transform duration-300 ease-in-out transform hover:scale-105">
           <Link
             href="/logo"
-            className="text-[12px] sm:text-[18px] lg:text-[24px] cursor-pointer text-white "
+            className="text-[14px] sm:text-[18px] lg:text-[24px] cursor-pointer text-white "
           >
             ..ดูผลงานโลโก้เพิ่มเติม คลิก..
           </Link>
