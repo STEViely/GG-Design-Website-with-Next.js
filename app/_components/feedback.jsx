@@ -93,7 +93,7 @@ export default function Feedback() {
         </button>
       </div>
       {isOpen && (
-        <div className="w-[0%] md:w-[50%] lg:w-[70%] mx-auto mt-4">
+        <div className="w-[100%] lg:w-[50%] xl:w-[100%] xl:grid xl:grid-cols-2 xl:gap-4 mx-auto mt-4">
           {comments.map((el, index) => (
             <Image
               src={el.src}
