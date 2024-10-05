@@ -92,7 +92,9 @@ export default function Page() {
             <h1 className="font-bold text-[32px] sm:text-[36px] md:text-[42px] lg:text-[64px] text-center cursor-pointer transition-transform duration-300 ease-in-out transform hover:scale-105 text-[#00133B]">
               รับออกแบบโลโก้{" "}
               <br className="md:hidden lg:hidden xl:hidden 2xl:hidden" />
-              <b className="font-bold text-[40px]">990 -. </b>
+              <b className="font-bold text-[40px] lg:text-[64px] xl:text-[64px]">
+                990 -.{" "}
+              </b>
               <br className="md:hidden lg:hidden xl:hidden 2xl:hidden" />
               ราคาเดียว <br />
               <i className="text-[18px] sm:text-[36px] md:text-[42px] lg:text-[64px]">
@@ -106,7 +108,7 @@ export default function Page() {
             {images.slice(0, 9).map((img, index) => (
               <div
                 key={index}
-                className="h-[80px] w-[80px] sm:h-[90px] sm:w-[90px] lg:h-[350px] lg:w-[350px] cursor-pointer transition-transform duration-300 ease-in-out transform hover:scale-105"
+                className="h-[90px] w-[90px] md:h-[170px] md:w-[170px] lg:h-[250px] lg:w-[250px] xl:h-[350px] xl:w-[350px] cursor-pointer transition-transform duration-300 ease-in-out transform hover:scale-105"
                 onClick={() => openModal(index)}
               >
                 <Image
